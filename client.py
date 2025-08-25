@@ -68,7 +68,7 @@ client1.close()
 dic = dict(sorted(dic.items()))
 
 
-client.send("SUBMIT\n2023MCS2481@knightworks\n1000\n".encode("utf-8"))
+client.send("SUBMIT\n2023MCS2492@avengers\n1000\n".encode("utf-8"))
 
 for key,value in dic.items():
     client.send(f"{key}\n{value}\n".encode("utf-8"))
@@ -78,4 +78,5 @@ submit_msg = client.recv(4096).decode("utf-8")
 print(submit_msg)
 
 # Closing connection to vayu server
+
 client.close()
